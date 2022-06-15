@@ -5,8 +5,8 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  background-color: teal;
+  color: #ffffff;
+  background-color: #10aaaa;
   font-size: 14px;
   font-weight: 500;
 `;

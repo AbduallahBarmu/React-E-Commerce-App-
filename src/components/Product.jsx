@@ -13,7 +13,7 @@ const Info = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.2);
   z-index: 3;
   display: flex;
   align-items: center;
@@ -37,14 +37,6 @@ const Container = styled.div`
   }
 `;
 
-const Circle = styled.div`
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background-color: white;
-  position: absolute;
-`;
-
 const Image = styled.img`
   height: 75%;
   z-index: 2;
@@ -65,10 +57,11 @@ const Icon = styled.div`
     transform: scale(1.1);
   }
 `;
+
 const Product = ({ item }) => {
   return (
     <Container>
-      <Circle />
+      {/* <Circle /> */}
       <Image src={item.img} />
       <Info>
         <Icon>

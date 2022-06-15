@@ -25,14 +25,14 @@ const Info = styled.div`
   flex-direction: column;
 `;
 const Title = styled.h1`
-  color: white;
+  color: #ffffff;
   margin-bottom: 20px;
 `;
 const Button = styled.button`
   border: none;
   border-radius: 7px;
   padding: 10px;
-  background-color: white;
+  background-color: #ffffff;
   cursor: pointer;
   font-weight: 600;
 `;

@@ -7,7 +7,6 @@ import { ShoppingCartOutlined } from "@material-ui/icons";
 
 const Container = styled.div`
   height: 60px;
-  /* background-color: black; */
 `;
 const Wrapper = styled.div`
   padding: 10px 20px;
@@ -73,7 +72,7 @@ const Navbar = () => {
           </Language>
           <SearchContainer>
             <Input />
-            <BsSearch style={{ color: "gray", fontSize: 16 }} />
+            <BsSearch style={{ color: "#ccc5b9", fontSize: 16 }} />
           </SearchContainer>
         </Left>
         <Center>
