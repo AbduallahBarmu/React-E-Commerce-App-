@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import { mobile } from "../responsive";
 import {
   Facebook,
   Instagram,
@@ -12,6 +12,7 @@ import {
 
 const Container = styled.div`
   display: flex;
+  ${mobile({ flexDirection: "column" })}
 `;
 
 // Left side
@@ -21,7 +22,9 @@ const Left = styled.div`
   flex-direction: column;
   padding: 20px;
 `;
+
 const Logo = styled.h1``;
+
 const Desc = styled.p`
   margin: 20px 0px;
 `;
@@ -44,10 +47,13 @@ const SocialIcon = styled.div`
 const Center = styled.div`
   flex: 1;
   padding: 20px;
+  ${mobile({ display: "none" })}
 `;
+
 const Title = styled.h3`
   margin-bottom: 30px;
 `;
+
 const List = styled.ul`
   display: flex;
   flex-wrap: wrap;
@@ -55,21 +61,26 @@ const List = styled.ul`
   margin: 0;
   list-style: none;
 `;
+
 const ListItem = styled.li`
   width: 50%;
   margin-bottom: 10px;
 `;
 
 // Right side
+
 const Right = styled.div`
   flex: 1;
   padding: 20px;
+  ${mobile({ backgroundColor: "#fff8f8" })}
 `;
+
 const ContactItem = styled.div`
   margin-bottom: 20px;
   display: flex;
   align-items: center;
 `;
+
 const Payment = styled.img`
   width: 50%;
 `;
